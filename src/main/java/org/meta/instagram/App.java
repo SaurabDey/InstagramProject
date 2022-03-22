@@ -1,5 +1,7 @@
 package org.meta.instagram;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,6 +27,8 @@ public class App
 		System.setProperty("webdriver.chrome.driver", "Resource/chromedriver.exe");
 		driver= new ChromeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 	}
 	public void login()
 	{
