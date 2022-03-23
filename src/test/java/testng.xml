@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test1">
+    <classes>
+      	<class name="org.meta.instagram.SaurabTest"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test name="Test2">
+    <classes>
+      	<class name="org.meta.instagram.MyTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
