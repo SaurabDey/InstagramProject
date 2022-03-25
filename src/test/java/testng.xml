@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Suite">
-  <test name="Test1">
+<suite parallel="tests" name="Suite">
+  
+ <test name="Test1">
+   <parameter name="browser" value="edge"></parameter>
     <classes>
-      	<class name="org.meta.instagram.SaurabTest"/>
+      <class name="org.meta.instagram.NewTest"/>
     </classes>
   </test> <!-- Test -->
 
-  <test name="Test2">
+ <test name="Test2">
+	<parameter name="browser" value="chrome"></parameter>
     <classes>
-      	<class name="org.meta.instagram.MyTest"/>
+      <class name="org.meta.instagram.NewTest"/>
     </classes>
   </test> <!-- Test -->
+
 </suite> <!-- Suite -->
